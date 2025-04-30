@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": ""
+        },
+        {
+            "name": "Flutter: ros",
+            "type": "dart",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/ros"
+        },
+        {
+            "name": "Flutter: ros (profile mode)",
+            "type": "dart",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/ros",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Flutter: ros (release mode)",
+            "type": "dart",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/ros",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Launch Chrome (Web Debug)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/ros"
+        }
+    ]
+}
